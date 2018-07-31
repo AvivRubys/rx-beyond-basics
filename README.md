@@ -1,19 +1,10 @@
+This is the code-behind of my live coding portion in the Rx Beyond Basics talk on 30/07/18 at [Soluto](https://www.solutotlv.com/)
+You'll find two branches here - 
+[before-talk](https://github.com/AvivRubys/rx-beyond-basics/tree/before-talk) and 
+[after-talk](https://github.com/AvivRubys/rx-beyond-basics/tree/after-talk). The latter contains the edits I made during the talk itself, the former does not.
 
-1 basic tweets
+The twitter api keys have been revoked, but you're welcome to generate your own and check it out :)
 
-2 manual unsubscribe after 20 tweets
-add take
-show takeUntil using a button click
-show takeWhile using a bad word in a tweet
+Just run `yarn` or `npm install` in each folder (`server` and `client`), and run `npm start` in both and everything should connect and start chugging along.
 
-3 count ui
-show two connections
-add share
-show one connection
-
-4 sentiment per tweet
-add sampleTime(200) to slow everything down
-demonstrate server restarts add repeat&retry
-i wanna stop after 3 bad tweets -> two subscriptions is bad, add them to one with merge
-add takeuntil
-.takeUntil(tweet$.bufferCount(3).filter(tweets => tweets.every(tweet => !tweet.score)))
+Enjoy :)
